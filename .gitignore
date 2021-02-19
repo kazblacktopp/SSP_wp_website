@@ -1,23 +1,2 @@
-# Ignore everything in the root directory, except:
-# "wp-content" directory, .gitignore, README.md and LICENSE files.
-/*
-!wp-content
-!.gitignore
-!README.md
-!LICENSE
-
-# Ignore everything in the "wp-content" directory, except:
-# "themes" directory
-wp-content/*
-!wp-content/themes/
-
-# Ignore everything in the themes directory, except:
-# "Divi-Child-Theme" directory
-wp-content/themes/*
-!wp-content/themes/Divi-Child-Theme
-
 # Ignore all .DS_Store files
 .DS_Store
-
-# Ignore old screenshot image files
-screenshot-divi.jpg
