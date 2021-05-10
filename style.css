@@ -39,6 +39,16 @@ input[type=text], input[type=password], input[type=tel], input[type=email], inpu
 }
 
 /* Shop, category and tags page template */
+
+.kb_shop_image.et_pb_module .woocommerce .et_shop_image>img {
+    height: 300px;
+    object-fit: contain;
+    background-color: #2c2720;
+    padding: 10px;
+    border: 2px solid #b97b23;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.3)!important;
+}
+
 .woocommerce .widget_price_filter .ui-slider .ui-slider-range {
     background-color: #2c2720;
 }
@@ -67,7 +77,33 @@ input[type=text], input[type=password], input[type=tel], input[type=email], inpu
     font-size: 12px;
 }
 
+.woocommerce nav.woocommerce-pagination ul li a {
+    font-weight: 700;
+}
+
+.woocommerce nav.woocommerce-pagination ul {
+    border: 1px solid #f7efe3;
+}
+
+.woocommerce nav.woocommerce-pagination ul li span.current {
+    background: #b97b23;
+    color: #f7efe3;
+}
+
+.woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li a:focus {
+    background: #f7efe3;
+    color: #b97b23;
+}
+
 /* Product page template */
+
+.kb_product_image img.wp-post-image {
+    max-height: 600px;
+    object-fit: contain;
+    background-color: #2c2720;
+    border: 2px solid #b97b23;
+}
+
 .woocommerce-variation-description {
    color: rgba(44,39,32,0.7);
  }
@@ -104,6 +140,14 @@ h2.woocommerce-Reviews-title {
 
 .woocommerce-page #reviews #comments ol.commentlist li img.avatar {
     box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 30%);
+}
+
+.kb_related_products .et_shop_image>img {
+    height: 240px !important;
+    object-fit: contain;
+    padding: 10px;
+    background-color: #2c2720;
+    border: 2px solid #b97b23;
 }
 
 /* Cart page */
@@ -263,13 +307,25 @@ h2.woocommerce-Reviews-title {
 }
 
 @media (max-width: 767px) {
+
+    .kb_shop_image.et_pb_module .woocommerce .et_shop_image>img {
+        height: 165px;
+        padding: 6px;
+    }
+
     .woocommerce-variation-add-to-cart.variations_button {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
    h2.woocommerce-Reviews-title {
         font-size: 16px;
+    }
+
+    .kb_related_products .et_shop_image>img {
+        height: 165px !important;
+        padding: 6px;;
     }
 
     .woocommerce-cart .quantity input.qty, .woocommerce-cart .woocommerce-Price-amount.amount {
