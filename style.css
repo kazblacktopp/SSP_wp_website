@@ -256,10 +256,47 @@ h2.woocommerce-Reviews-title {
     background-color: #F7EFE3;
 }
 
-/* Woocommerce */
-
 .woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register {
     border-color: #B97B23;
+}
+
+/* My Account page */
+
+#woocommerce-account-page .woocommerce {
+    display: flex;
+}
+
+.woocommerce .woocommerce-MyAccount-navigation>ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.woocommerce .woocommerce-MyAccount-navigation li.woocommerce-MyAccount-navigation-link>a {
+    display: block;
+    width: 60%;
+    border: 1px solid #B97B23;
+    border-radius: 3px;
+    padding: 5px;
+    text-align: center;
+    margin: auto auto 5px;
+}
+
+.woocommerce .woocommerce-MyAccount-navigation li.woocommerce-MyAccount-navigation-link>a:hover {
+    color: #F7EFE3;
+    background-color: #B97B23;
+}
+
+.woocommerce .woocommerce-MyAccount-content a.woocommerce-Button.button {
+    border-color: #B97B23;
+    color: #B97B23 !important;
+}
+
+.woocommerce .woocommerce-MyAccount-content a.woocommerce-Button.button:hover {
+    background-color: #F7EFE3;
+}
+
+.woocommerce .woocommerce-MyAccount-content .woocommerce-Addresses .woocommerce-Address {
+    padding: 20px;
 }
 
 /* Terms and Conditions page */
@@ -303,6 +340,23 @@ h2.woocommerce-Reviews-title {
 
     .woocommerce-cart table.cart td.product-remove {
         float: left;
+    }
+
+    .woocommerce .woocommerce-MyAccount-content .woocommerce-Addresses .woocommerce-Address {
+        padding: 20px 0;
+    }
+
+    #woocommerce-account-page .woocommerce-MyAccount-content .woocommerce-info {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+    }
+
+    #woocommerce-account-page .woocommerce-MyAccount-content .woocommerce-info a.woocommerce-Button.button {
+        margin-top: 20px;
+        font-size: 0.89em;
+        width: 70%;
     }
 }
 
@@ -376,5 +430,21 @@ h2.woocommerce-Reviews-title {
 
     .woocommerce-cart table.cart td.product-name a {
         padding-left: 5%;
+    }
+
+    #woocommerce-account-page .woocommerce {
+        display: block;
+    }
+
+    .woocommerce .woocommerce-MyAccount-navigation {
+        margin-bottom: 40px;
+    }
+
+    .woocommerce .woocommerce-MyAccount-navigation>ul {
+        padding: 0;
+    }
+
+    .woocommerce .woocommerce-MyAccount-navigation li.woocommerce-MyAccount-navigation-link>a {
+        margin: auto auto 5px;
     }
 }
